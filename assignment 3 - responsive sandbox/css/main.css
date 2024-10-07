@@ -123,7 +123,7 @@ a {
 /* ----- BACKGROUNDS AND SPACING ----- */
 
 .bg-pink{
-    padding: 60px 0;
+    padding: 60px 40px;
 }
 
 .red-squ, .red-bg {
@@ -376,11 +376,13 @@ footer {
     }
 
     .about-img {
-        margin: 0;
+        max-width: 100%;
+        padding: 0 30px;
     }
 
     .about-link {
         justify-content: start;
+        margin: 0;
     }
 
     .about-info {
@@ -405,12 +407,11 @@ footer {
 
     .footer {
         flex-direction: column;
-        margin: 0 0 0 50px;
-        order: -1;
+        align-items: center;
     }
 
     .footer-content {
-        text-align: center;
+        align-items: center;
         justify-content: center;
     }
 
@@ -426,10 +427,30 @@ footer {
 /* mobile */
 @media only screen and (max-width: 480px) {
     .wrapper {
-        padding: 0 20px;
+        padding: 0;
         text-align: center;
     }
 
+    .hero-header {
+        margin: 0;
+    }
+
+    .bg-pink {
+        padding: 60px 20px;
+    }
+
+    .about {
+        padding: 0 20px;
+    }
+
+    .about-img {
+        margin: 0;
+    }
+
+    .shapes {
+        margin: 0 20px;
+    }
+    
     .footer {
         justify-content: center;
     }
